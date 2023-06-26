@@ -1,0 +1,10 @@
+.about {
+    background-color: var(--light);
+    min-height: 80vh;
+    width: 100%;
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
