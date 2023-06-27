@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useTheme } from "../../hooks/useTheme";

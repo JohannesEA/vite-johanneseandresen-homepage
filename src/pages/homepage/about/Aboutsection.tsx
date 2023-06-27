@@ -6,8 +6,7 @@ import "swiper/css";
 const AboutSection = () => {
   return (
     <div className="about">
-      <h2>Utdannelse</h2>
-
+      <h2 className="extra-large-margin-bottom">Utdannelse</h2>
       <div className="about__cards">
         <CardSwiper cards={cardData} />
       </div>

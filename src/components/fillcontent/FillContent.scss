@@ -1,0 +1,17 @@
+.fillContent {
+    background-color: var(--primary);
+    padding: 20px;
+    width: 0%;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position: relative;
+    .title {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--text-color); // Or any color you prefer for the text
+        padding-left: 10px; // Adjust as needed
+    }
+}

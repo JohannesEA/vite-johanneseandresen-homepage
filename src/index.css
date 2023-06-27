@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light);
+}
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -122,4 +131,48 @@ p {
     line-height: 1.6;
     color: var(--text-color);
     font-weight: 400;
+}
+
+
+/* Small margins */
+
+.small-margin-top {
+    margin-top: 8px;
+}
+
+.small-margin-bottom {
+    margin-bottom: 8px;
+}
+
+
+/* Medium margins */
+
+.medium-margin-top {
+    margin-top: 16px;
+}
+
+.medium-margin-bottom {
+    margin-bottom: 16px;
+}
+
+
+/* Large margins */
+
+.large-margin-top {
+    margin-top: 24px;
+}
+
+.large-margin-bottom {
+    margin-bottom: 24px;
+}
+
+
+/* Extra Large margins */
+
+.extra-large-margin-top {
+    margin-top: 48px;
+}
+
+.extra-large-margin-bottom {
+    margin-bottom: 48px;
 }
