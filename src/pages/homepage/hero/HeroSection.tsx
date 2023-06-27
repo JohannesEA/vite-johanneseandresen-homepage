@@ -9,21 +9,23 @@ export const HeroSection = () => {
     <section className="hero">
       <div className="hero__text">
         <h1 className="hero__title">Velkommen</h1>
-        <p className="hero__description">
+        <p className="hero__description extra-large-margin-top">
           Jeg heter Johannes, og er en 25 år gamme dataingeniør. For tiden
           jobber jeg som fullstack utvikler hos Eika samtidig som jeg har flere
           prosjekter på siden.
         </p>
-        <div className="hero__buttons">
+        <div className="hero__buttons extra-large-margin-top">
           <Button
-            title="Click me!"
+            title="Kontakt meg"
             onClick={() => console.log("Hello world")}
             type={ButtonTypes.PRIMARY}
+            className="hero__button--one"
           />
           <Button
-            title="Click me!"
+            title="Last ned CV"
             onClick={() => console.log("Hello world")}
             type={ButtonTypes.SECONDARY}
+            className="hero__button--two"
           />
         </div>
       </div>

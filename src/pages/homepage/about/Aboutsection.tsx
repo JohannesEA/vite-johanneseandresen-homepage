@@ -1,14 +1,17 @@
 import CardSwiper from "../../../components/swiper/CardSwiper";
-import { cardData } from "../../../development/data";
+import { educationAndExperienceDummyDate } from "../../../development/data";
 import "./AboutSection.scss";
 import "swiper/css";
 
 const AboutSection = () => {
   return (
     <div className="about">
-      <h2 className="extra-large-margin-bottom">Utdannelse</h2>
+      <h3 className="extra-large-margin-bottom">Utdannelse og erfaring</h3>
       <div className="about__cards">
-        <CardSwiper cards={cardData} />
+        <CardSwiper
+          cards={educationAndExperienceDummyDate}
+          includeLinks={false}
+        />
       </div>
     </div>
   );

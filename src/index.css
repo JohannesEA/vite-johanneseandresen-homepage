@@ -9,6 +9,7 @@ body {
 
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
     color-scheme: light dark;
@@ -28,8 +29,14 @@ body {
     --background-color: #ffffff;
     /* background color for light mode */
     --text-color: rgba(0, 0, 0, 0.87);
+    --border-radius: 0.5em;
     /* text color for light mode */
     font-size: 16px;
+    --min-section-height: 80vh;
+    --max-section-width: 120em;
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --box-shadow--hover: rgba(149, 157, 165, 0.2) 0px 8px 40px;
+    --max-form-width: 70em;
     /* base font size */
 }
 
@@ -52,24 +59,18 @@ body {
     /* background color for dark mode */
     --text-color: rgba(255, 255, 255, 0.87);
     /* text color for dark mode */
-    --box-shadow: 0px 4px 15px -2px rgba(163, 163, 163, 0.1);
-    /* smallest size for mobile screens */
-    --box-shadow-md: 0px 6px 20px -3px rgba(0, 0, 0, 0.1);
-    /* medium size for tablet screens */
-    --box-shadow-lg: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 @media screen and (min-width: 768px) {
      :root {
         font-size: 18px;
-        --box-shadow: var(--box-shadow-md);
     }
 }
 
 @media screen and (min-width: 1024px) {
      :root {
         font-size: 20px;
-        --box-shadow: var(--box-shadow-lg);
     }
 }
 
@@ -125,9 +126,15 @@ h3 {
     font-weight: 600;
 }
 
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
 p {
-    font-size: 1rem;
-    /* 16px at base font size */
+    font-size: 1.2rem;
     line-height: 1.6;
     color: var(--text-color);
     font-weight: 400;

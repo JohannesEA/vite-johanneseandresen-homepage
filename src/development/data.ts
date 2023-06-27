@@ -2,49 +2,105 @@
 
 import { Expertise } from "../general/Types";
 
-export const cardData = [
+export const educationAndExperienceDummyDate = [
   {
-    title: "Card 1",
-    image: "https://via.placeholder.com/150",
-    description: "This is the description for Card 1",
+    title: "OsloMet",
+    image: "src/assets/images/oslomet.png",
+    description: "Utdannet dataingeniør fra OsloMet i perioden 2019-2022",
+    url: "#",
   },
   {
-    title: "Card 2",
-    image: "https://via.placeholder.com/150",
-    description: "This is the description for Card 2",
+    title: "Aize",
+    image: "src/assets/images/aize.webp",
+    description:
+      "Summerintern hos Aize ved Forneby, Bærum, i perioden sommer 2021",
+    url: "#",
   },
   {
-    title: "Card 3",
-    image: "https://via.placeholder.com/150",
-    description: "This is the description for Card 3",
+    title: "Eika",
+    image: "src/assets/images/eika.png",
+    description:
+      "Fullstack utvikler hos Eika. Begynte februar 2022 og jobber der fremdeles.",
+    url: "#",
   },
   {
-    title: "Card 4",
-    image: "https://via.placeholder.com/150",
-    description: "This is the description for Card 4",
+    title: "React",
+    image: "src/assets/images/diploma-1.png",
+    description:
+      "Dette kurset ga meg mer kunnskap innenfor React, redux og hooks",
   },
   {
-    title: "Card 5",
-    image: "https://via.placeholder.com/150",
-    description: "This is the description for Card 5",
+    title: "Kotlin",
+    image: "src/assets/images/kotlin-course-1.png",
+    description:
+      "Dette kurset ga meg en god overgang til og forståelse for Kotlin som programmeringsspråk",
+  },
+  {
+    title: "Google analytics",
+    image: "src/assets/images/google-analytics-1.png",
+    description:
+      "Dette kurset ga meg mer kunnskap innenfor Google Analytics og hvordan det brukes",
+  },
+];
+
+export const projectDummyData = [
+  {
+    title: "Bærum trefelling",
+    image: "src/assets/images/bt.jpg",
+    description: "Utvilket en informasjonsnettside for bærumtrefellin.no",
+    url: "#",
+  },
+  {
+    title: "Mojo Websites",
+    image: "src/assets/images/mojo-websites.png",
+    description: "Dette er min egen nettside for kjøp og salg av nettsider.",
+    url: "#",
+  },
+  {
+    title: "Physio Teacher",
+    image: "src/assets/images/pt-logo.png",
+    description:
+      "Jeg og en partner utvikler en app for å forbedre samarbeid mellom behandlere og klienter innenfor trening og fysioterapi.",
+    url: "#",
+  },
+  {
+    title: "Skeive Stilker",
+    image: "src/assets/images/skeivestilker.png",
+    description: "Utvilket en informasjonsnettside for skeivestilker.no",
+    url: "#",
   },
 ];
 
 export const dummyDataExpertise: Expertise[] = [
   {
-    id: 1,
-    title: "JavaScript",
+    id: 3,
+    title: "React - Typescript/Javascript",
     level: 90,
   },
   {
-    id: 2,
-    title: "React",
-    level: 85,
+    id: 4,
+    title: "Kotlin",
+    level: 80,
   },
   {
-    id: 3,
-    title: "TypeScript",
+    id: 5,
+    title: "Java",
     level: 80,
+  },
+  {
+    id: 6,
+    title: "C#",
+    level: 80,
+  },
+  {
+    id: 7,
+    title: "html/css",
+    level: 70,
+  },
+  {
+    id: 9,
+    title: "Python",
+    level: 60,
   },
   // More entries as required
 ];

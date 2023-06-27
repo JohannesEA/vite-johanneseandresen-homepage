@@ -1,0 +1,15 @@
+.input {
+    padding: 10px;
+    min-height: 2em;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--primary);
+    font-family: var(--font-family);
+    width: 90%;
+    &--textarea {
+        min-height: 10em;
+    }
+    &:focus {
+        border: 2px solid var(--primary);
+        text-decoration: none;
+    }
+}

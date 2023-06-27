@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import { dummyDataExpertise } from "../../development/data";
 import "./Homepage.scss";
 import AboutSection from "./about/Aboutsection";
+import ContactSection from "./contact/ContactSection";
 import ExpertiseSection from "./expertise/ExpertiseSection";
 import { HeroSection } from "./hero/HeroSection";
 import ProjectsSection from "./projects/ProjectsSection";
@@ -15,6 +16,7 @@ const Homepage = () => {
       <AboutSection />
       <ExpertiseSection expertiseList={dummyDataExpertise} />
       <ProjectsSection />
+      <ContactSection />
       <Footer />
     </div>
   );

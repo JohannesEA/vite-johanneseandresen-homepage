@@ -21,7 +21,7 @@ const Button: FC<ButtonProps> = ({ title, onClick, type, className }) => {
       )}
       onClick={onClick}
     >
-      {title}
+      <p>{title}</p>
     </button>
   );
 };

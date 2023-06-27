@@ -1,36 +1,39 @@
 import "./Footer.scss";
+import {
+  AiOutlineGithub,
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+} from "react-icons/ai";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer__content">
         <div className="footer__section">
-          <h3>Section 1</h3>
-          <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
+          <h4 className="medium-margin-bottom">Kontaktinformasjon</h4>
+          <ul className="footer__section-contact-info">
+            <li>johannes.erdahl.andresen@gmail.com</li>
+            <li>+47 99509035</li>
+            <li>Oslo</li>
           </ul>
         </div>
-        <div className="footer__section">
-          <h3>Section 2</h3>
+        <div className="footer__section ">
+          <h4 className="medium-margin-bottom">Sosiale lenker</h4>
           <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
-          </ul>
-        </div>
-        <div className="footer__section">
-          <h3>Section 3</h3>
-          <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
+            <li className="footer__section-link">
+              <AiOutlineGithub />
+            </li>
+            <li className="footer__section-link">
+              <AiOutlineFacebook />
+            </li>
+            <li className="footer__section-link">
+              <AiOutlineInstagram />
+            </li>
           </ul>
         </div>
       </div>
       <div className="footer__copyright">
-        <p>&copy; {new Date().getFullYear()} Your Company</p>
+        <p>&copy; {new Date().getFullYear()} Erdahl Andresen IT</p>
       </div>
     </footer>
   );

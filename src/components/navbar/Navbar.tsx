@@ -10,23 +10,32 @@ const Navbar = () => {
 
   return (
     <nav className={isOpen ? "navbar navbar--open" : "navbar"}>
-      <div className="navbar__logo">Logo</div>
-      <div className="navbar__theme-switch" onClick={toggleTheme}>
-        {theme === "dark" ? <FaMoon /> : <FaSun />}
-      </div>
-      <div
-        className={
-          isOpen ? "navbar__links navbar__links--open" : "navbar__links"
-        }
-      >
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <div className="navbar__inner-container">
+        <div className="navbar__theme-switch" onClick={toggleTheme}>
+          {theme === "dark" ? <FaMoon /> : <FaSun />}
+        </div>
+        <div
+          className={
+            isOpen ? "navbar__links navbar__links--open" : "navbar__links"
+          }
+        >
+          <a className="navbar__link" href="#home">
+            Home
+          </a>
+          <a className="navbar__link" href="#about">
+            About
+          </a>
+          <a className="navbar__link" href="#services">
+            Services
+          </a>
+          <a className="navbar__link" href="#contact">
+            Contact
+          </a>
+        </div>
 
-      <div className="navbar__hamburger">
-        <Hamburger toggled={isOpen} toggle={setOpen} />
+        <div className="navbar__hamburger">
+          <Hamburger toggled={isOpen} toggle={setOpen} />
+        </div>
       </div>
     </nav>
   );
