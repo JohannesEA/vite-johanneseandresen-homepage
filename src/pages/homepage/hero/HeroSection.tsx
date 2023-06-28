@@ -10,9 +10,9 @@ export const HeroSection = () => {
       <div className="hero__text">
         <h1 className="hero__title">Velkommen</h1>
         <p className="hero__description extra-large-margin-top">
-          Jeg heter Johannes, og er en 25 år gamme dataingeniør. For tiden
-          jobber jeg som fullstack utvikler hos Eika samtidig som jeg har flere
-          prosjekter på siden.
+          Jeg er en svært motivert, sosial og pliktoppfyllende dataingeniør på
+          25 år. For tiden jobber jeg som fullstack utvikler hos Eika gruppen
+          samtidig som jeg har flere prosjekter på siden.
         </p>
         <div className="hero__buttons extra-large-margin-top">
           <Button

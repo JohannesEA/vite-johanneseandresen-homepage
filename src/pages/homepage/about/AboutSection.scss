@@ -1,11 +1,70 @@
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
 .about {
-    background-color: var(--light);
-    max-width: var(--max-section-width);
-    margin: 0 auto;
-    width: 100%;
-    &__cards {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  background-color: var(--light);
+  color: var(--text-color);
+  max-width: var(--max-section-width);
+  margin: 0 auto;
+  width: 90%;
+  &__title {
+    margin-bottom: 2rem;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  &__info {
+    text-align: center;
+  }
+  &__name {
+    font-size: 1.5rem;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    &__item {
+      margin-bottom: 1rem;
     }
+  }
+  &__image-container {
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(to top, var(--light), transparent);
+    }
+  }
+  &__image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  @media (min-width: $tablet) {
+    &__content {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__info {
+      text-align: left;
+    }
+    &__image-container {
+      width: 40%;
+      max-width: 400px;
+      margin-bottom: 0;
+    }
+    &__image {
+      max-width: 80%;
+      margin: 0 auto; // center the image if it's less than 100% of its container
+    }
+  }
 }

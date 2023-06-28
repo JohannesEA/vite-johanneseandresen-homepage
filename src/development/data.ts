@@ -45,29 +45,29 @@ export const educationAndExperienceDummyDate = [
 
 export const projectDummyData = [
   {
-    title: "Bærum trefelling",
-    image: "src/assets/images/bt.jpg",
-    description: "Utvilket en informasjonsnettside for bærumtrefellin.no",
-    url: "#",
-  },
-  {
     title: "Mojo Websites",
     image: "src/assets/images/mojo-websites.png",
     description: "Dette er min egen nettside for kjøp og salg av nettsider.",
-    url: "#",
+    url: "https://mojowebsites.netlify.app/",
   },
   {
     title: "Physio Teacher",
     image: "src/assets/images/pt-logo.png",
     description:
       "Jeg og en partner utvikler en app for å forbedre samarbeid mellom behandlere og klienter innenfor trening og fysioterapi.",
-    url: "#",
+    url: "https://physioteacher.netlify.app/",
   },
   {
     title: "Skeive Stilker",
     image: "src/assets/images/skeivestilker.png",
     description: "Utvilket en informasjonsnettside for skeivestilker.no",
-    url: "#",
+    url: "https://skeivestilker.no/",
+  },
+  {
+    title: "Bærum trefelling",
+    image: "src/assets/images/bt.jpg",
+    description: "Utvilket en informasjonsnettside for bærumtrefellin.no",
+    url: "https://baerumtrefelling.netlify.app/",
   },
 ];
 

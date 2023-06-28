@@ -5,7 +5,7 @@ import "swiper/css";
 
 const ProjectSection = () => {
   return (
-    <div className="project">
+    <div id="projects" className="project">
       <h3 className="extra-large-margin-bottom">Prosjeker</h3>
       <div className="project__cards">
         <CardSwiper cards={projectDummyData} includeLinks={true} />

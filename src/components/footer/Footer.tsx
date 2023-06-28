@@ -20,14 +20,29 @@ function Footer() {
         <div className="footer__section ">
           <h4 className="medium-margin-bottom">Sosiale lenker</h4>
           <ul>
-            <li className="footer__section-link">
-              <AiOutlineGithub />
+            <li>
+              <a
+                className="footer__section-link"
+                href="https://github.com/JohannesEA"
+              >
+                <AiOutlineGithub />
+              </a>
             </li>
-            <li className="footer__section-link">
-              <AiOutlineFacebook />
+            <li>
+              <a
+                className="footer__section-link"
+                href="https://github.com/JohannesEA"
+              >
+                <AiOutlineFacebook />
+              </a>
             </li>
-            <li className="footer__section-link">
-              <AiOutlineInstagram />
+            <li>
+              <a
+                className="footer__section-link"
+                href="https://github.com/JohannesEA"
+              >
+                <AiOutlineInstagram />
+              </a>
             </li>
           </ul>
         </div>

@@ -22,10 +22,10 @@ export interface ExpertisSectioneProps {
 
 const ExpertiseSection: FC<ExpertisSectioneProps> = ({ expertiseList }) => {
   return (
-    <div className="expertise">
+    <div id="expertice" className="expertise">
       <h3 className="extra-large-margin-bottom">Kunnskap</h3>
       <div className="expertise__list">
-        {expertiseList.map((expertise, index) => (
+        {expertiseList.map((expertise) => (
           <div key={expertise.id} className={"test"}>
             <ExpertiseComponent expertise={expertise} />
           </div>

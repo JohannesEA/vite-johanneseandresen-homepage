@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useTheme } from "../../hooks/useTheme";
+import { Link } from "react-scroll";
+
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -19,18 +21,62 @@ const Navbar = () => {
             isOpen ? "navbar__links navbar__links--open" : "navbar__links"
           }
         >
-          <a className="navbar__link" href="#home">
+          <Link
+            activeClass="active"
+            className="navbar__link"
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Home
-          </a>
-          <a className="navbar__link" href="#about">
-            About
-          </a>
-          <a className="navbar__link" href="#services">
-            Services
-          </a>
-          <a className="navbar__link" href="#contact">
-            Contact
-          </a>
+          </Link>
+          <Link
+            activeClass="active"
+            className="navbar__link"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Om
+          </Link>
+          <Link
+            activeClass="active"
+            className="navbar__link"
+            to="expertice"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Kunnskap
+          </Link>
+
+          <Link
+            activeClass="active"
+            className="navbar__link"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Prosjekter
+          </Link>
+          <Link
+            activeClass="active"
+            className="navbar__link"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Kontakt
+          </Link>
         </div>
 
         <div className="navbar__hamburger">

@@ -4,7 +4,7 @@ import { BiMap } from "react-icons/bi";
 
 const ContactSection = () => {
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <h3 className="large-margin-bottom">Kontakt meg</h3>
 
       <div className="contact-info__banners large-margin-top large-margin-bottom">
