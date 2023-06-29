@@ -1,52 +1,53 @@
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
 .hero {
-    background-color: var(--light);
-    max-width: var(--max-section-width);
-    margin: 0 auto;
-    display: grid;
-    padding-top: 5em;
-    grid-template-rows: 1fr auto;
-    justify-items: center;
-    align-content: center;
-    min-height: var(--min-section-height);
+  background-color: var(--light);
+  max-width: var(--max-section-width);
+  margin: 0 auto;
+  display: grid;
+  padding-top: 5em;
+  width: 90%;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+  align-content: center;
+  min-height: var(--min-section-height);
+  text-align: center;
+  &__button--one {
+    margin-right: 5px;
+  }
+  &__button--two {
+    margin-left: 5px;
+  }
+  &__text {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    &__button--one {
-        margin-right: 5px;
-    }
-    &__button--two {
-        margin-left: 5px;
-    }
-    &__text {
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        margin: 0 auto;
-    }
-    &__title {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-    &__description {
-        font-size: 1.2rem;
-    }
-    &__lottie {
-        width: 90%;
-        height: auto;
-        margin-bottom: 8em;
-    }
-    &__animation {
-        max-width: 40em;
-        margin: 0 auto;
-    }
-    @media screen and (min-width: 1024px) {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: none;
-        padding-top: 0;
-        justify-items: start;
-        &__text {
-            padding-right: 2rem;
-        }
-    }
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  &__description {
+    font-size: 1.2rem;
+  }
+  &__lottie {
+    width: 90%;
+    height: auto;
+    margin-bottom: 8em;
+  }
+  &__animation {
+    max-width: 40em;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    padding-top: 0;
+    justify-items: start;
+  }
 }

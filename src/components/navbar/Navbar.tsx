@@ -29,6 +29,7 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
+            onClick={() => setOpen(false)}
           >
             Home
           </Link>
@@ -40,6 +41,7 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
+            onClick={() => setOpen(false)}
           >
             Om
           </Link>
@@ -51,6 +53,7 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
+            onClick={() => setOpen(false)}
           >
             Kunnskap
           </Link>
@@ -63,6 +66,7 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
+            onClick={() => setOpen(false)}
           >
             Prosjekter
           </Link>
@@ -74,6 +78,7 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
+            onClick={() => setOpen(false)}
           >
             Kontakt
           </Link>

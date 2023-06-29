@@ -1,3 +1,5 @@
+import LinkButton from "../../../components/button/LinkButton";
+import { ButtonTypes } from "../../../general/Types";
 import "./AboutSection.scss";
 const AboutSection = () => {
   return (
@@ -7,14 +9,29 @@ const AboutSection = () => {
         <div className="about__info">
           <h4 className="about__name">Johannes Erdahl Andresen</h4>
           <ul className="about__list">
-            <li className="about__item">Alder: 25 år</li>
-            <li className="about__item">Utdannelse: Data ingeniørr</li>
-            <li className="about__item">Lokasjon: Oslo</li>
             <li className="about__item">
-              Arbeidserfaring: 2 år som fullstack utvikler
+              <b>Alder:</b> 25 år
             </li>
-            <li className="about__item">Arbeidsgiver: Eika</li>
+            <li className="about__item">
+              <b>Utdannelse:</b> Data ingeniør
+            </li>
+            <li className="about__item">
+              <b>Lokasjon:</b> Oslo
+            </li>
+            <li className="about__item">
+              <b>Arbeidserfaring:</b> 2 år som fullstack utvikler
+            </li>
+            <li className="about__item">
+              <b>Arbeidsgiver:</b> Eika
+            </li>
           </ul>
+          <LinkButton
+            title="Github"
+            url="https://github.com/JohannesEA"
+            type={ButtonTypes.PRIMARY}
+            className="about__button"
+            download={false}
+          />
         </div>
         <div className="about__image-container">
           <img

@@ -5,8 +5,13 @@ $desktop: 1024px;
   background-color: var(--light);
   color: var(--text-color);
   max-width: var(--max-section-width);
+  min-height: var(--min-section-height);
   margin: 0 auto;
   width: 90%;
+  &__button {
+    width: 100%;
+    margin: 2em auto 0 auto;
+  }
   &__title {
     margin-bottom: 2rem;
   }
@@ -16,7 +21,7 @@ $desktop: 1024px;
     align-items: center;
   }
   &__info {
-    text-align: center;
+    text-align: left;
   }
   &__name {
     font-size: 1.5rem;
@@ -29,7 +34,7 @@ $desktop: 1024px;
     }
   }
   &__image-container {
-    width: 100%;
+    max-width: 250px;
     margin-bottom: 2rem;
     position: relative;
     overflow: hidden;

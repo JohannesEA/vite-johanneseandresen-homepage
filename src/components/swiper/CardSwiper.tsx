@@ -12,6 +12,7 @@ interface CardData {
   title: string;
   image: string;
   description: string;
+  year?: string;
 }
 
 interface CardSwiperProps {

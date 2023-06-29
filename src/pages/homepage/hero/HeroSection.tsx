@@ -3,6 +3,8 @@ import Lottie from "lottie-react";
 import "./HeroSection.scss";
 import Button from "../../../components/button/Button";
 import { ButtonTypes } from "../../../general/Types";
+import LinkButton from "../../../components/button/LinkButton";
+import { Link } from "react-scroll";
 
 export const HeroSection = () => {
   return (
@@ -11,21 +13,33 @@ export const HeroSection = () => {
         <h1 className="hero__title">Velkommen</h1>
         <p className="hero__description extra-large-margin-top">
           Jeg er en svært motivert, sosial og pliktoppfyllende dataingeniør på
-          25 år. For tiden jobber jeg som fullstack utvikler hos Eika gruppen
-          samtidig som jeg har flere prosjekter på siden.
+          25 år. For tiden jobber jeg som fullstack utvikler hos Eika samtidig
+          som jeg har flere prosjekter på siden.
         </p>
         <div className="hero__buttons extra-large-margin-top">
-          <Button
-            title="Kontakt meg"
-            onClick={() => console.log("Hello world")}
-            type={ButtonTypes.PRIMARY}
-            className="hero__button--one"
-          />
-          <Button
+          <Link
+            activeClass="active"
+            className="navbar__link"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            <Button
+              title="Kontakt meg"
+              onClick={() => console.log("Hello world")}
+              type={ButtonTypes.PRIMARY}
+              className="hero__button--one"
+            />
+          </Link>
+
+          <LinkButton
             title="Last ned CV"
-            onClick={() => console.log("Hello world")}
+            url="src/assets/files/CV_johannes_2022.pdf"
             type={ButtonTypes.SECONDARY}
             className="hero__button--two"
+            download
           />
         </div>
       </div>

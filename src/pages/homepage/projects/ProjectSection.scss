@@ -1,13 +1,20 @@
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
 .project {
-    background-color: var(--light);
-    max-width: var(--max-section-width);
-    min-height: var(--min-section-height);
-    height: auto;
-    margin: 0 auto;
-    width: 100%;
-    &__cards {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  background-color: var(--light);
+  max-width: var(--max-section-width);
+  min-height: var(--min-section-height);
+  padding-top: 5em;
+  height: auto;
+  margin: 0 auto;
+  width: 90%;
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-top: 0em;
+  }
 }

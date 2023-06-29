@@ -6,21 +6,24 @@ export const educationAndExperienceDummyDate = [
   {
     title: "OsloMet",
     image: "src/assets/images/oslomet.png",
-    description: "Utdannet dataingeniør fra OsloMet i perioden 2019-2022",
+    description:
+      "Utdannet dataingeniør fra OsloMet. Skrev bacheloroppgave for cegal konsulentselskap.",
+    year: "2019-2022",
     url: "#",
   },
   {
     title: "Aize",
     image: "src/assets/images/aize.webp",
     description:
-      "Summerintern hos Aize ved Forneby, Bærum, i perioden sommer 2021",
+      "Summerintern hos Aize ved Forneby, Bærum. Utviklet regelmotor for utvikling av oljeplatformer.",
+    year: "Juni 2021 - Aug 2021",
     url: "#",
   },
   {
     title: "Eika",
     image: "src/assets/images/eika.png",
-    description:
-      "Fullstack utvikler hos Eika. Begynte februar 2022 og jobber der fremdeles.",
+    description: "Jobber som fullstack utvikler innen forsikring.",
+    year: "Feb 2022-",
     url: "#",
   },
   {

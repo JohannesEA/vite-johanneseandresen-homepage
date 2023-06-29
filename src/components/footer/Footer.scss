@@ -1,59 +1,60 @@
 .footer {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary);
+  color: var(--text-color);
+  padding: 1rem;
+  &__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--primary);
-    color: var(--text-color);
-    padding: 1rem;
+  }
+  &__section {
+    margin-bottom: 1rem;
+    margin: 10px auto;
+    max-width: 25em;
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style-type: none;
+      padding: 0;
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  &__section-contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__section-link {
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: color 0.3s ease-in-out;
+    color: var(--light);
+    &:hover {
+      box-shadow: var(--box-shadow);
+      color: orange;
+    }
+  }
+  &__copyright {
+    align-self: center;
+    margin-top: 1rem;
+  }
+  @media screen and (min-width: 768px) {
     &__content {
-        display: flex;
-        flex-direction: column;
+      flex-direction: row;
+      justify-content: center;
     }
     &__section {
-        margin-bottom: 1rem;
-        margin: 10px auto;
-        max-width: 25em;
-        h3 {
-            margin-bottom: 0.5rem;
-        }
-        ul {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            list-style-type: none;
-            padding: 0;
-            li {
-                margin-bottom: 0.5rem;
-            }
-        }
+      margin-left: 3rem;
+      margin-right: 3rem;
     }
-    &__section-contact-info {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    &__section-link {
-        cursor: pointer;
-        font-size: 1.5em;
-        transition: color 0.3s ease-in-out;
-        &:hover {
-            box-shadow: var(--box-shadow);
-            color: orange;
-        }
-    }
-    &__copyright {
-        align-self: center;
-        margin-top: 1rem;
-    }
-    @media screen and (min-width: 768px) {
-        &__content {
-            flex-direction: row;
-            justify-content: center;
-        }
-        &__section {
-            margin-left: 3rem;
-            margin-right: 3rem;
-        }
-    }
+  }
 }

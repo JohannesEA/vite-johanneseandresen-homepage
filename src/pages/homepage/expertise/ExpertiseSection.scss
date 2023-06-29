@@ -1,35 +1,34 @@
 .expertise {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: var(--min-section-height);
-    background-color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--light);
 }
 
 .expertise__list {
-    width: 100%;
-    height: auto;
-    min-height: 50%;
+  width: 100%;
+  height: auto;
+  min-height: 50%;
 }
 
 .expertise-container {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 90%;
-    margin: 0 auto 1em auto;
-    h3 {
-        margin-bottom: 0.5em;
-    }
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto 1em auto;
+  h3 {
+    margin-bottom: 0.5em;
+  }
 }
 
 .level-bar {
-    width: 100%;
-    height: 20px;
+  width: 100%;
+  height: 20px;
 }
 
 .level-bar__item {
-    margin-bottom: 1em; // Modify as needed
+  margin-bottom: 1em; // Modify as needed
 }
