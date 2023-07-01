@@ -5,7 +5,6 @@ $desktop: 1024px;
   background-color: var(--light);
   color: var(--text-color);
   max-width: var(--max-section-width);
-  min-height: var(--min-section-height);
   margin: 0 auto;
   width: 90%;
   &__button {
@@ -54,6 +53,7 @@ $desktop: 1024px;
     display: block;
   }
   @media (min-width: $tablet) {
+    min-height: var(--min-section-height);
     &__content {
       flex-direction: row-reverse;
       justify-content: space-between;
