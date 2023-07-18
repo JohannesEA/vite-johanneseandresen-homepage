@@ -1,4 +1,4 @@
-import hackerman from "../../../assets/lottie/hackerman.json";
+import hackerman from "../../../lottie/hackerman.json";
 import Lottie from "lottie-react";
 import "./HeroSection.scss";
 import Button from "../../../components/button/Button";
@@ -36,7 +36,7 @@ export const HeroSection = () => {
 
           <LinkButton
             title="Last ned CV"
-            url="src/assets/files/CV_johannes_2022.pdf"
+            url="/assets/files/CV_johannes_2022.pdf"
             type={ButtonTypes.SECONDARY}
             className="hero__button--two"
             download

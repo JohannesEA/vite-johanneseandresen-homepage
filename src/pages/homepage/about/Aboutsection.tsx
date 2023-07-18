@@ -36,7 +36,7 @@ const AboutSection = () => {
         <div className="about__image-container">
           <img
             className="about__image"
-            src="src/assets/images/johannes.png"
+            src="/assets/images/johannes.png"
             alt="Johannes"
           />
         </div>
