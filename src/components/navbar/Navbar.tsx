@@ -8,7 +8,7 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
-  const [theme, toggleTheme] = useTheme("dark");
+  const [theme, toggleTheme] = useTheme("light");
 
   return (
     <nav className={isOpen ? "navbar navbar--open" : "navbar"}>

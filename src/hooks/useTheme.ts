@@ -8,7 +8,7 @@ export const useTheme = (initialTheme: Theme): useThemeReturn => {
   const [theme, setTheme] = useState<Theme>(initialTheme);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
   useEffect(() => {
