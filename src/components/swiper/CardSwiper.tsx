@@ -1,8 +1,5 @@
-// CardSwiper.tsx
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "./CardSwiper.scss";
 import ProjectCard from "../card/ProjectCard";
 import { useWindowWidth } from "../../hooks/useWindowWidth";
@@ -40,6 +37,7 @@ const CardSwiper: React.FC<CardSwiperProps> = ({ cards, includeLinks }) => {
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
       className="swiper"
+      resizeObserver={true}
     >
       {cards.map((card, index) => (
         <SwiperSlide key={index}>
