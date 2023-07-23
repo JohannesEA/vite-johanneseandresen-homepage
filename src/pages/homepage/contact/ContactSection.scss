@@ -48,7 +48,6 @@
   flex-direction: column;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: var(--light);
-  max-width: 100%;
   width: 90%;
   min-height: 10em;
   border-radius: 1em;
@@ -84,22 +83,29 @@
     font-size: 1.2rem;
   }
   .banner__container {
-    min-width: 20em;
+    min-width: 15em; // Reduced minimum width to 15em
   }
 }
 
-@media only screen and (min-width: 885px) {
+@media only screen and (min-width: 900px) {
   .phone__link {
     font-size: 1.4rem;
   }
   .contact-info__banners {
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px; // Added a gap between the banners
+  }
+  .banner__container {
+    padding: 2em; // Increased padding to maintain consistent look
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .contact-info__banners {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    ); // Reduced minimum size for auto-fit
   }
   .banner__container {
     width: auto;
