@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className={isOpen ? "navbar navbar--open" : "navbar"}>
       <div className="navbar__inner-container">
         <div className="navbar__theme-switch" onClick={toggleTheme}>
-          {theme === "dark" ? <FaMoon /> : <FaSun />}
+          {theme === "dark" ? <FaSun /> : <FaMoon />}
         </div>
         <div
           className={
@@ -31,7 +31,7 @@ const Navbar = () => {
             duration={500}
             onClick={() => setOpen(false)}
           >
-            Home
+            Hjem
           </Link>
           <Link
             activeClass="active"
