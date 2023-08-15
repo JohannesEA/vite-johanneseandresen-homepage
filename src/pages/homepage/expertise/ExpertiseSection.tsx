@@ -22,7 +22,7 @@ export interface ExpertisSectioneProps {
 
 const ExpertiseSection: FC<ExpertisSectioneProps> = ({ expertiseList }) => {
   return (
-    <div id="expertice" className="expertise">
+    <section id="expertice" className="expertise">
       <h3 className="extra-large-margin-bottom">Kunnskap</h3>
       <div className="expertise__list">
         {expertiseList.map((expertise) => (
@@ -31,7 +31,7 @@ const ExpertiseSection: FC<ExpertisSectioneProps> = ({ expertiseList }) => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

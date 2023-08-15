@@ -3,7 +3,7 @@ import { ButtonTypes } from "../../../general/Types";
 import "./AboutSection.scss";
 const AboutSection = () => {
   return (
-    <div id="about" className="about">
+    <section id="about" className="about">
       <h3 className="about__title">Om</h3>
       <div className="about__content">
         <div className="about__info">
@@ -41,7 +41,7 @@ const AboutSection = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

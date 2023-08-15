@@ -5,7 +5,7 @@ import "swiper/css";
 
 const CvSection = () => {
   return (
-    <div id="cv" className="cv">
+    <section id="cv" className="cv">
       <h3 className="extra-large-margin-bottom">Utdannelse og erfaring</h3>
       <div className="cv__cards">
         <CardSwiper
@@ -13,7 +13,7 @@ const CvSection = () => {
           includeLinks={false}
         />
       </div>
-    </div>
+    </section>
   );
 };
 
