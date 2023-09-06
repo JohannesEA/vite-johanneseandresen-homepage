@@ -179,3 +179,7 @@ p {
 .extra-large-margin-bottom {
   margin-bottom: 48px;
 }
+
+section {
+  min-height: 50em;
+}

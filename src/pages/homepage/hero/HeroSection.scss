@@ -6,12 +6,10 @@ $desktop: 1024px;
   max-width: var(--max-section-width);
   margin: 0 auto;
   display: grid;
-  padding-top: 5em;
   width: 90%;
   grid-template-rows: 1fr auto;
   justify-items: center;
   align-content: center;
-  min-height: var(--min-section-height);
   text-align: center;
   &__buttons {
     display: flex;

@@ -53,7 +53,6 @@ $desktop: 1024px;
     display: block;
   }
   @media (min-width: $tablet) {
-    min-height: var(--min-section-height);
     &__content {
       flex-direction: row-reverse;
       justify-content: space-between;

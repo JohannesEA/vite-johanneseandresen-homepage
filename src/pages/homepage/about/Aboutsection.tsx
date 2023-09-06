@@ -10,10 +10,10 @@ const AboutSection = () => {
           <h4 className="about__name">Johannes Erdahl Andresen</h4>
           <ul className="about__list">
             <li className="about__item">
-              <b>Alder:</b> 25 år
+              <b>Alder:</b> 26 år
             </li>
             <li className="about__item">
-              <b>Utdannelse:</b> Data ingeniør
+              <b>Utdannelse:</b> Dataingeniør
             </li>
             <li className="about__item">
               <b>Lokasjon:</b> Oslo

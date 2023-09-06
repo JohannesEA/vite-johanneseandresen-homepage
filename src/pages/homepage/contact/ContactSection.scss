@@ -4,11 +4,10 @@
   justify-content: center;
   flex-direction: column;
   max-width: var(--max-section-width);
-  margin: 5em auto 0 auto;
+  margin: 0 auto 0;
   width: 90%;
   height: 100%;
   background-color: var(--light);
-  min-height: var(--min-section-height);
 }
 
 .contact__form {
