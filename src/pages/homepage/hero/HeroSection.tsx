@@ -12,7 +12,7 @@ export const HeroSection = () => {
       <div className="hero__text">
         <h1 className="hero__title">Velkommen</h1>
         <p className="hero__description extra-large-margin-top">
-          Jeg er en 25 år gammel mann som brenner for teknologi og utvikling.
+          Jeg er en 26 år gammel mann som brenner for teknologi og utvikling.
           Som fullstack-utvikler hos Eika får jeg utnyttet mine ferdigheter og
           lærer nye ting hver dag. Men det stopper ikke på kontoret - jeg har
           alltid et par sideprosjekter på gang som holder meg skjerpet og
